@@ -12,7 +12,7 @@ Includes seven (7) representors and associated clients apps supporting the follo
  4. `application/vnd.hal+json` : HAL - Hyperlinking Convention http://stateless.co/hal_specification.html
  5. `application/vnd.collection+json` : Collection+JSON - CRUD+Templates http://amundsen.com/media-types/collection/
  6. `application/vnd.siren+json` : Siren - Hypermedia Entities https://github.com/kevinswiber/siren
- 7. `application/vnd.wstl+json` : WeSTL - Web Service Transition Language https://rawgit.com/RWCBook/transitions-spec/master/index.html
+ 7. `application/vnd.wstl+json` : WeSTL - Web Service Transition Language http://g.mamund.com/wstl
  
  
   
