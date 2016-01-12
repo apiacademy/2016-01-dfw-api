@@ -1,2 +1,2 @@
-# NDC Oslo 2015 
-Sample code for for Mike Amundsen's 2015 NDC Oslo talk on Learning Client Hypermedia
+# DFW API Professionals - January 2016
+Sample code for for Mike Amundsen's Jan 2016 talk "RESTful Web Clients"
