@@ -10,9 +10,13 @@
 module.exports = repjson;
 
 function repjson(object) {
-
+  var rtn;
+  
+  rtn = {};
+  rtn.wstl = object;
+  
   // emit the full internal representor graph
-  return JSON.stringify(object, null, 2);
+  return JSON.stringify(rtn, null, 2);
 }
 
 // EOF

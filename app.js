@@ -25,7 +25,7 @@ var port = (process.env.PORT || 8181);
 var jsonType = 'application/json';
 var cjType = 'application/vnd.collection+json';
 var haljsonType = 'application/vnd.hal+json';
-var repjsonType = 'application/representor+json';
+var wstlType = 'application/vnd.wstl+json';
 var sirenType = 'application/vnd.siren+json';
 var htmlType = "text/html";
 var jsonUrlType = "application/json;profile=urls";

@@ -12,7 +12,7 @@
 var json = require('./representors/json.js');
 var cj = require('./representors/cj.js');
 var haljson = require('./representors/haljson.js');
-var repjson = require('./representors/repjson.js');
+var wstl = require('./representors/wstljson.js');
 var siren = require('./representors/siren.js');
 
 // demo formats for NDC Oslo 2015
@@ -26,7 +26,7 @@ function processDoc(object, mimeType, root) {
 
   // clueless? assume JSON
   if (!mimeType) {
-    mimeType = "application/vnd.collection+json";
+    mimeType = "application/vnd.wstl+json";
   }
 
   // dispatch to requested representor
@@ -43,11 +43,11 @@ function processDoc(object, mimeType, root) {
     case "application/vnd.siren+json":
       doc = siren(object, root);
       break;
-    case "application/representor+json":
-      doc = repjson(object, root);
+    case "application/vnd.wstl+json":
+      doc = wstl(object, root);
       break;
       
-    // demo formats for NDC Oslo 2015  
+    // demo formats
     case "application/json;profile=urls":
       doc = jsonurls(object, root);
       break;
@@ -56,7 +56,7 @@ function processDoc(object, mimeType, root) {
       break;
       
     default:
-      doc = repjson(object, root);
+      doc = wstl(object, root);
       break;
   }
 
